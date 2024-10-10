@@ -30,10 +30,12 @@ const Home = () => {
       }
 
       try {
-        const fetchedTasks = await fetchTasks(user.userId);
+        const fetchedTasks = await fetchTasks();
+        console.log("fetched", fetchedTasks);
         const transformedTasks = fetchedTasks.map((task) => ({
           id: task.id,
           name: task.name,
+          userId: task.userId,
           description: task.description,
           state:
             task.state === 0
@@ -52,6 +54,13 @@ const Home = () => {
   }, [user, setUser, navigate, setTasks]);
 
   const moveTask = async (taskId, newState) => {
+    const taskToUpdate = tasks.find((task) => task.id === taskId);
+
+    if (taskToUpdate.userId !== user.userId) {
+      console.warn("You can only move your own tasks.");
+      return;
+    }
+
     const apiState =
       newState === "TASK" ? 0 : newState === "IN_PROGRESS" ? 1 : 2;
 
@@ -62,7 +71,6 @@ const Home = () => {
     );
 
     try {
-      const taskToUpdate = tasks.find((task) => task.id === taskId);
       const updateTaskDto = {
         id: taskId,
         name: taskToUpdate.name,
@@ -95,6 +103,26 @@ const Home = () => {
     setDetailModalOpen(true);
   };
 
+  const handleSaveTask = async (updatedTask) => {
+    try {
+      console.log("update", updatedTask);
+      const updatedTaskDto = {
+        id: updatedTask.id,
+        name: updatedTask.name,
+        description: updatedTask.description,
+        userId: updatedTask.userId,
+        state: updatedTask.state, // Ensure you set the state as needed
+      };
+      console.log("dto", updatedTaskDto);
+
+      await updateTask(updatedTask.id, updatedTaskDto);
+      const fetchedTasks = await fetchTasks();
+      setTasks(fetchedTasks); // Refresh the task list
+    } catch (error) {
+      console.error("An error occurred while saving the task:", error);
+    }
+  };
+
   const handleDeleteTask = async () => {
     try {
       await deleteTask(selectedTask.id);
@@ -113,6 +141,11 @@ const Home = () => {
     const [{ canDrop, isOver }, drop] = useDrop(() => ({
       accept: "TASK",
       drop: (item) => moveTask(item.id, state),
+      canDrop: (item) => {
+        const taskToDrop = tasks.find((task) => task.id === item.id);
+        console.log("taskto", tasks);
+        return taskToDrop && taskToDrop.userId === user.userId;
+      },
       collect: (monitor) => ({
         isOver: !!monitor.isOver(),
         canDrop: !!monitor.canDrop(),
@@ -165,6 +198,8 @@ const Home = () => {
           isOpen={detailModalOpen}
           onClose={() => setDetailModalOpen(false)}
           task={selectedTask}
+          user={user}
+          onSave={handleSaveTask}
           onDelete={handleDeleteTask}
         />
       </div>

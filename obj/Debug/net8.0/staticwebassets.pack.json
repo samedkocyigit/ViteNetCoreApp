@@ -1,12 +1,172 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\fontawesome-webfont-B-jkhYfk.woff2",
+      "PackagePath": "staticwebassets\\assets\\fontawesome-webfont-B-jkhYfk.woff2"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\fontawesome-webfont-CDK5bt4p.woff",
+      "PackagePath": "staticwebassets\\assets\\fontawesome-webfont-CDK5bt4p.woff"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\fontawesome-webfont-CQDK8MU3.ttf",
+      "PackagePath": "staticwebassets\\assets\\fontawesome-webfont-CQDK8MU3.ttf"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\fontawesome-webfont-D13rzr4g.svg",
+      "PackagePath": "staticwebassets\\assets\\fontawesome-webfont-D13rzr4g.svg"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\fontawesome-webfont-G5YE5S7X.eot",
+      "PackagePath": "staticwebassets\\assets\\fontawesome-webfont-G5YE5S7X.eot"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-4dzZyLIy.js",
+      "PackagePath": "staticwebassets\\assets\\index-4dzZyLIy.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-5NYJ3s2U.css",
+      "PackagePath": "staticwebassets\\assets\\index-5NYJ3s2U.css"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-6vbMR1Mv.js",
+      "PackagePath": "staticwebassets\\assets\\index-6vbMR1Mv.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-95HWhBr-.js",
+      "PackagePath": "staticwebassets\\assets\\index-95HWhBr-.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-A_Dp40DR.js",
+      "PackagePath": "staticwebassets\\assets\\index-A_Dp40DR.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-BKQSm-4I.css",
+      "PackagePath": "staticwebassets\\assets\\index-BKQSm-4I.css"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-BOezkbRk.js",
+      "PackagePath": "staticwebassets\\assets\\index-BOezkbRk.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-BR-umcc6.css",
+      "PackagePath": "staticwebassets\\assets\\index-BR-umcc6.css"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-BRvw8V9Y.js",
+      "PackagePath": "staticwebassets\\assets\\index-BRvw8V9Y.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-Bb_qOkgI.css",
+      "PackagePath": "staticwebassets\\assets\\index-Bb_qOkgI.css"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-BbvZI_LF.js",
+      "PackagePath": "staticwebassets\\assets\\index-BbvZI_LF.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-Bi9OrLYN.js",
+      "PackagePath": "staticwebassets\\assets\\index-Bi9OrLYN.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-BtFXwav9.js",
+      "PackagePath": "staticwebassets\\assets\\index-BtFXwav9.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-BuJAND83.js",
+      "PackagePath": "staticwebassets\\assets\\index-BuJAND83.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-CItduiqy.js",
+      "PackagePath": "staticwebassets\\assets\\index-CItduiqy.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-CbDPNJPn.css",
+      "PackagePath": "staticwebassets\\assets\\index-CbDPNJPn.css"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-CbjdXyGJ.css",
+      "PackagePath": "staticwebassets\\assets\\index-CbjdXyGJ.css"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-CdAAxf8i.js",
+      "PackagePath": "staticwebassets\\assets\\index-CdAAxf8i.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-CeUE-Uul.js",
+      "PackagePath": "staticwebassets\\assets\\index-CeUE-Uul.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-Ck0c5eKK.js",
+      "PackagePath": "staticwebassets\\assets\\index-Ck0c5eKK.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-Cz2UkIp8.css",
+      "PackagePath": "staticwebassets\\assets\\index-Cz2UkIp8.css"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-D-E2o7S9.js",
+      "PackagePath": "staticwebassets\\assets\\index-D-E2o7S9.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-D78noVd3.css",
+      "PackagePath": "staticwebassets\\assets\\index-D78noVd3.css"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-DLCpvtmu.css",
+      "PackagePath": "staticwebassets\\assets\\index-DLCpvtmu.css"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-DfW8o0Ns.js",
+      "PackagePath": "staticwebassets\\assets\\index-DfW8o0Ns.js"
+    },
+    {
       "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-DmKe6vd3.css",
       "PackagePath": "staticwebassets\\assets\\index-DmKe6vd3.css"
     },
     {
-      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-DmsIYj2-.js",
-      "PackagePath": "staticwebassets\\assets\\index-DmsIYj2-.js"
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-Dw4-fUil.js",
+      "PackagePath": "staticwebassets\\assets\\index-Dw4-fUil.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-Dxnk8FIN.js",
+      "PackagePath": "staticwebassets\\assets\\index-Dxnk8FIN.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-DzszjgD5.js",
+      "PackagePath": "staticwebassets\\assets\\index-DzszjgD5.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-FBbi9jQO.js",
+      "PackagePath": "staticwebassets\\assets\\index-FBbi9jQO.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-QccrYZ-f.js",
+      "PackagePath": "staticwebassets\\assets\\index-QccrYZ-f.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-Sy-slLXc.js",
+      "PackagePath": "staticwebassets\\assets\\index-Sy-slLXc.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-_u82SRzl.js",
+      "PackagePath": "staticwebassets\\assets\\index-_u82SRzl.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-e127K4uc.js",
+      "PackagePath": "staticwebassets\\assets\\index-e127K4uc.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-uJWGavmt.js",
+      "PackagePath": "staticwebassets\\assets\\index-uJWGavmt.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-w8MMSMfB.js",
+      "PackagePath": "staticwebassets\\assets\\index-w8MMSMfB.js"
+    },
+    {
+      "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\assets\\index-wSnPCw2P.js",
+      "PackagePath": "staticwebassets\\assets\\index-wSnPCw2P.js"
     },
     {
       "Id": "C:\\Users\\samed\\Desktop\\ViteNetCoreApp\\wwwroot\\index.html",

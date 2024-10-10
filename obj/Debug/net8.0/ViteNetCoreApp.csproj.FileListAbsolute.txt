@@ -212,3 +212,4 @@ C:\Users\samed\Desktop\ViteNetCoreApp\bin\Debug\net8.0\zh-Hans\Microsoft.VisualS
 C:\Users\samed\Desktop\ViteNetCoreApp\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\samed\Desktop\ViteNetCoreApp\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\samed\Desktop\ViteNetCoreApp\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\samed\Desktop\ViteNetCoreApp\obj\Debug\net8.0\ViteNetCoreApp.sourcelink.json
