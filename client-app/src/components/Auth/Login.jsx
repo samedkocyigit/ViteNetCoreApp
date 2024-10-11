@@ -17,12 +17,14 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      console.log("userdata", userData);
       const response = await login(userData);
+      console.log("response", response);
       const user = {
-        email: response.data.user.email,
-        name: response.data.user.name,
-        token: response.data.user.token,
-        userId: response.data.user.userId,
+        email: response.user.email,
+        name: response.user.name,
+        token: response.user.token,
+        userId: response.user.userId,
       };
 
       setUser(user);

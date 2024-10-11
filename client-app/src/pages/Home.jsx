@@ -138,9 +138,21 @@ const Home = () => {
   const handleDeleteTask = async () => {
     try {
       await deleteTask(selectedTask.id);
-      setTasks((prevTasks) =>
-        prevTasks.filter((task) => task.id !== selectedTask.id)
-      );
+      const fetchedTasks = await fetchTasks();
+      const transformedTasks = fetchedTasks.map((task) => ({
+        id: task.id,
+        name: task.name,
+        userId: task.userId,
+        description: task.description,
+        state:
+          task.state === 0
+            ? "TASK"
+            : task.state === 1
+            ? "IN_PROGRESS"
+            : "COMPLETED",
+      }));
+      console.log("messi");
+      setTasks(transformedTasks);
       setDetailModalOpen(false);
       setSelectedTask(null);
     } catch (error) {

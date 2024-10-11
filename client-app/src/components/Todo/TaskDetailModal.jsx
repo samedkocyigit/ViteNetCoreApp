@@ -1,17 +1,34 @@
-import { useState, useEffect } from "react"; // Add useEffect
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import "../../styles/css/TaskDetail.css";
+import { getUser } from "../../services/userService";
 
 const TaskDetailModal = ({ isOpen, onClose, task, user, onDelete, onSave }) => {
   const [taskName, setTaskName] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
+  const [taskOwner, setTaskOwner] = useState("");
 
   useEffect(() => {
-    if (task) {
-      setTaskName(task.name);
-      setTaskDescription(task.description);
-    }
-  }, [task]);
+    const fetchUser = async () => {
+      if (task) {
+        setTaskName(task.name);
+        setTaskDescription(task.description);
+        if (task.userId === user.userId) {
+          setTaskOwner(user.name);
+        } else {
+          try {
+            const response = await getUser(task.userId);
+            setTaskOwner(response.username);
+          } catch (error) {
+            console.error("Failed to fetch user:", error);
+          }
+        }
+      }
+    };
+
+    fetchUser();
+  }, [task, user]);
 
   const handleSave = () => {
     const updatedTask = {
@@ -19,7 +36,7 @@ const TaskDetailModal = ({ isOpen, onClose, task, user, onDelete, onSave }) => {
       name: taskName,
       description: taskDescription,
     };
-    onSave(updatedTask); // Pass the updated task to onSave
+    onSave(updatedTask);
   };
 
   if (!isOpen || !task) return null;
@@ -32,14 +49,15 @@ const TaskDetailModal = ({ isOpen, onClose, task, user, onDelete, onSave }) => {
           type="text"
           value={taskName}
           onChange={(e) => setTaskName(e.target.value)}
-          disabled={task.userId !== user.userId} // Disable if not the owner
+          disabled={task.userId !== user.userId}
         />
         <p>Task Description</p>
         <textarea
           value={taskDescription}
           onChange={(e) => setTaskDescription(e.target.value)}
-          disabled={task.userId !== user.userId} // Disable if not the owner
+          disabled={task.userId !== user.userId}
         />
+        <p>Task Owner: {taskOwner}</p>
         <div className="button-container">
           <button className="button-delete" onClick={onDelete}>
             Delete
@@ -62,9 +80,9 @@ TaskDetailModal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
   task: PropTypes.object,
-  user: PropTypes.object.isRequired, // Add user prop validation
+  user: PropTypes.object.isRequired,
   onDelete: PropTypes.func.isRequired,
-  onSave: PropTypes.func.isRequired, // Add onSave prop validation
+  onSave: PropTypes.func.isRequired,
 };
 
 export default TaskDetailModal;

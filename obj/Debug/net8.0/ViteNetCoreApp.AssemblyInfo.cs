@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ViteNetCoreApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+002927169d861076a40eb456a72dcdbb5834bf93")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b42423b472d574a00686567ab734706ad6839507")]
 [assembly: System.Reflection.AssemblyProductAttribute("ViteNetCoreApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ViteNetCoreApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
