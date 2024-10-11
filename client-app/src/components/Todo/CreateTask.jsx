@@ -19,11 +19,12 @@ const CreateTask = ({ onClose }) => {
           description,
           userId: user.userId,
         });
-        const updatedTasks = await fetchTasks(user.userId);
+        const updatedTasks = await fetchTasks();
         const transformedTasks = updatedTasks.map((task) => ({
           id: task.id,
           name: task.name,
           description: task.description,
+          userId: task.userId,
           state:
             task.state === 0
               ? "TASK"

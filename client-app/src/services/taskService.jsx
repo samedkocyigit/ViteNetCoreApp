@@ -14,9 +14,6 @@ export const fetchTasks = async () => {
 };
 
 export const updateTask = async (taskId, updateTaskDto) => {
-  console.log("taskId", taskId);
-  console.log("updateTask", updateTaskDto);
-
   try {
     const response = await axios.put(
       `${API_URL}/tasks/${taskId}`,

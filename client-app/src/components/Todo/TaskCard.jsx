@@ -1,5 +1,8 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { useDrag } from "react-dnd";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
 const TaskCard = ({ task, onDetailClick }) => {
   const [{ isDragging }, drag] = useDrag(() => ({
@@ -18,8 +21,8 @@ const TaskCard = ({ task, onDetailClick }) => {
     >
       <div style={{ display: "flex", alignItems: "center" }}>
         <span style={{ flexGrow: 1 }}>{task.name}</span>
-        <i
-          className="fas fa-info-circle"
+        <FontAwesomeIcon
+          icon={faInfoCircle}
           onClick={onDetailClick}
           style={{
             cursor: "pointer",
@@ -28,7 +31,7 @@ const TaskCard = ({ task, onDetailClick }) => {
             fontSize: "1.2em",
           }}
           title="Details"
-        ></i>
+        />
       </div>
     </div>
   );
